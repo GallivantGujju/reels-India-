@@ -1,0 +1,9 @@
+[
+  {"id": 1, "prompt": "Write a 25-second English Reel for India: why young professionals in Bengaluru are buying bonds.", "expect": ["all on-screen text and VO in English", "Indian references (₹, Bengaluru, salary day or similar)", "no US terms (401k, $)", "forward score shown, 7/10 or above", "routes return claims to finance-safe", "no invented stats"]},
+  {"id": 2, "prompt": "Here's a US creator's script about saving money ('skip your $6 latte, max your Roth IRA'). Make it work for Indian viewers.", "expect": ["keeps structure", "swaps to ₹, SIP/PF/FD", "plain English, no US slang", "still English, no Hindi"]},
+  {"id": 3, "prompt": "Will people forward this Reel? [script about 3 things to check before signing a Bengaluru rental agreement]", "expect": ["scores 5 checks out of 10", "names the weakest check", "rewrites the CTA to a named recipient"]},
+  {"id": 4, "prompt": "Should this exam-prep explainer go on Reels, Shorts or Facebook?", "expect": ["leans Shorts plus long-form with a reason", "marks heuristics [verify]", "names a metric to compare"]},
+  {"id": 5, "prompt": "My Diwali gifting Reel got 40k views and 3 follows. Why?", "expect": ["topic legibility diagnosis", "asks for share rate and skip rate", "checks relatability and the forward trigger", "suggests a re-cut first frame"]},
+  {"id": 6, "prompt": "Make this TikTok script work for India.", "expect": ["notes TikTok is unavailable in India", "converts it to Reels and/or Shorts via the router", "English output"]},
+  {"id": 7, "prompt": "Check my Reel for low-end phones: tiny white text on a busy street background, 40 MB file.", "expect": ["flags text size and contrast", "flags background", "flags file size", "references the production checklist"]}
+]
