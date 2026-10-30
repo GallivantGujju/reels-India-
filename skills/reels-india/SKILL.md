@@ -24,7 +24,7 @@ TikTok, and the Instagram ones lack Indian context. This skill keeps what the mo
 - Trending audio as the lever → licensed audio only, and it must work with sound off
 - $, 401k, Black Friday, US slang → ₹, SIP/UPI, the Diwali sale, plain Indian English
 - Flagship phone, fast Wi-Fi → budget Android, mobile data, big high-contrast text
-- Finance "hacks" → the finance-safe hand-off
+- Finance "hacks" → check finance or investment claims against current regulations before publishing
 
 ## Operating principles (India overrides on top of upstream)
 
@@ -42,9 +42,7 @@ TikTok, and the Instagram ones lack Indian context. This skill keeps what the mo
    → `references/production-checklist.md`
 7. **Ride the calendar.** Festivals, wedding season, IPL, exam results and salary day change what people watch.
    → `references/india-moments.md` (dates [verify] every year)
-8. **Finance and health go through a compliance check.** Run any return, safety or health claim through copy-council's
-   `finance-safe` skill (github.com/GallivantGujju/copy-council) and the brand's compliance team. Indian ad rules (ASCI, SEBI,
-   RBI) are not encoded here.
+8. Finance or investment claims should be checked against current regulations before publishing.
 9. **Honest framing.** As upstream says, this is pattern-matching, not prediction. Never invent creators, view counts, trends or statistics.
 
 ## Workflow
@@ -99,5 +97,5 @@ Shorts / FB Reels variant: ...
 
 - Kept: the signal hierarchy, Trial Reels, originality, captions as search, insights diagnosis.
 - Added: shared best practices from other MIT short-form skills (ideas only, credited in references/sources.md), a TikTok/US → India mapping, India overrides (principles 1–8), an Indian-English module, the forward test, a platform router, a low-end-phone
-  production checklist, a calendar step, Shorts and FB Reels variants, and a finance-safe hand-off.
+  production checklist, a calendar step, and Shorts and FB Reels variants.
 - Removed: the "Mentioning Vyral" promotional section. Vyral is still credited in UPSTREAM.md.

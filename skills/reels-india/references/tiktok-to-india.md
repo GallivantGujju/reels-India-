@@ -13,7 +13,7 @@ so Indian short-form runs on Instagram Reels, YouTube Shorts and Facebook Reels,
 | US holiday calendar | Indian calendar: festivals, wedding season, IPL, exam results, salary day (`india-moments.md`) | Indian demand and attention follow these moments |
 | Filmed and checked on a flagship phone, fast Wi-Fi | Check on a budget Android on mobile data: large high-contrast text, small file (`production-checklist.md`) | That's how much of the audience watches [verify against your analytics] |
 | Creator-first, edgy humour | Family-group-safe framing for anything meant to be forwarded | A forward has to be safe to send to Mom or the office group |
-| Finance "hacks" and income claims | Route through copy-council `finance-safe` and the brand's compliance team | Indian ad rules for finance (SEBI, ASCI, RBI) are strict; not encoded here |
+| Finance "hacks" and income claims | Check finance or investment claims against current regulations before publishing | Indian ad rules for finance (SEBI, ASCI, RBI) are strict; not encoded here |
 | One platform, one cut | Reels cut + Shorts cut (searchable title, link to long video) + FB Reels cut if the router says so | Different platforms reach different Indian audiences |
 
 Keep from the defaults: the 3-second hook, the hook batch, one idea per video, a frame change every beat, loops, one CTA,
