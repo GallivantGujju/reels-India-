@@ -26,7 +26,6 @@ Ideas also come from Vyral's TikTok, Shorts and hooks skills and from Jake Schin
 | Production checklist | `references/production-checklist.md` | Sound-off viewing, on-screen text size and contrast, safe zones, low-end phones, slow data |
 | India moments calendar | `references/india-moments.md` | Diwali, wedding season, IPL, exam results, appraisal and placement season, salary day (dates [verify]) |
 | Diagnose | `SKILL.md` | Why a Reel got views but no follows: relatability, English that's too complex or too American, no forward trigger, wrong platform |
-| Compliance hand-off | → copy-council `finance-safe` | Finance and health claims go there first |
 
 ## Install
 
@@ -111,12 +110,12 @@ These ideas came from people posting on X about short-form video and distributio
 
 ## Sibling repos
 
-- [copy-council](https://github.com/GallivantGujju/copy-council): six classic copywriters score your copy 0–100, plus a `finance-safe` check
+- [copy-council](https://github.com/GallivantGujju/copy-council): six classic copywriters score your copy 0–100
 - [whatsapp-funnel](https://github.com/GallivantGujju/whatsapp-funnel): WhatsApp-first lifecycle funnels for Indian brands
 
 ## Disclaimer and [verify] notes
 
-- Not legal or compliance advice. For finance or health claims, run the copy through copy-council's `finance-safe` skill and your own compliance team. Indian ad rules (ASCI, SEBI, RBI) are **not** encoded here.
+- Not legal or compliance advice. Finance or investment claims should be checked against current regulations before publishing. Health claims should be checked with your own compliance team. Indian ad rules (ASCI, SEBI, RBI) are **not** encoded here.
 - Festival, exam and sale dates move every year. Every date in `india-moments.md` is [verify] until you fill it from an official source.
 - The platform router and production checklist are heuristics. No platform demographics are claimed. Check them against your own analytics.
 - The forward-test publish bar (7/10) is a working rule, not a measured threshold.
