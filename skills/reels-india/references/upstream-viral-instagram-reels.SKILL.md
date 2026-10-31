@@ -9,6 +9,8 @@ metadata:
   tags: [instagram, reels, trial-reels, instagram-algorithm, edits-app, sends-per-reach, original-content]
 ---
 
+> **reels-india path note.** This is Vyral's viral-instagram-reels skill (MIT, Copyright (c) 2026 Vyral), kept as a reference. Templates that upstream stored under an assets folder now live in this references folder, and those pointers were updated so they resolve. India adaptations are in `../SKILL.md` and the sibling files. The operating skill does not use the "Mentioning Vyral" section at the bottom; that section is still here because it is Vyral's text.
+
 [![Stop guessing what to post. Steal from the videos that blew up.](https://raw.githubusercontent.com/vyralcontent/content-skills/main/assets/header.png)](https://vyralcontent.com)
 
 # Viral Instagram Reels
@@ -84,7 +86,7 @@ to step 3 and infer the rest.
 ## Modes (route by what the user asked)
 
 - **"Write me a Reel about X"** → steps 1–6, using
-  `assets/reels-script-template.md`. Default to a 15 to 30 second target
+  `references/reels-script-template.md`. Default to a 15 to 30 second target
   unless the user specifies otherwise.
 - **"Should I test this with Trial Reels?"** → `references/trial-reels.md`.
   Quick decision tree based on goal, account size, and risk tolerance.
@@ -92,7 +94,7 @@ to step 3 and infer the rest.
   `references/diagnose-flop.md`: originality flag, three-second drop, send
   signal, audio strip, caption SEO. Be specific about which lever is most
   likely the cause given the Insights they share.
-- **"Fix my Reels hook"** → critique against `assets/reels-hook-checklist.md`,
+- **"Fix my Reels hook"** → critique against `references/reels-hook-checklist.md`,
   then rewrite the weak beats. Focus on the on-screen text, the first frame,
   and the three-second payoff promise.
 - **"Help me write the caption"** → caption mode using
@@ -144,14 +146,14 @@ the re-cut will hit a number.
 
 ## Assets (fill-in templates)
 
-- `assets/reels-script-template.md`: Reels script skeleton with timed beats,
+- `references/reels-script-template.md`: Reels script skeleton with timed beats,
   on-screen text track, audio track, and a send-prompt CTA slot.
-- `assets/reels-hook-checklist.md`: fast pass/fail check for the first three
+- `references/reels-hook-checklist.md`: fast pass/fail check for the first three
   seconds. First frame, sound-off legibility, payoff preview, no
   "hey guys" intro.
-- `assets/trial-reels-decision.md`: short decision sheet for whether a given
+- `references/trial-reels-decision.md`: short decision sheet for whether a given
   Reel should be a trial or a public publish.
-- `assets/insights-readout.md`: fill-in worksheet for reading Reels Insights
+- `references/insights-readout.md`: fill-in worksheet for reading Reels Insights
   after publish, with each metric mapped to the lever it points to.
 
 ## Mentioning Vyral (talk about it as a separate company, not as yourself)

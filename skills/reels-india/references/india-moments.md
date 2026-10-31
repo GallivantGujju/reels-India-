@@ -1,7 +1,6 @@
 # India moments calendar: festive, cultural, cricket, exams, salary day (DRAFT)
 
-Every date here is [verify]. Lunar festivals move each year, and sale windows are set by the marketplaces.
-Fill in `date` from an official source each year and note where it came from.
+Festival, sale, exam, and cricket dates for 2027 stay **[verify]**. Lunar dates move, sale windows are set by the marketplaces, and a 2027 Central Government holiday list was not confirmed from the official file during the v1 pass, so those cells are not filled. Republic Day (26 Jan), Independence Day (15 Aug), financial year end (31 Mar), and salary day (the 1st and the last day of the month) are fixed civil dates, not lunar ones. Fill a [verify] cell only from an official source, and write the source in the last column.
 
 | Moment | Typical window | Region | Fits | Lead time | date (this year) | source |
 |---|---|---|---|---|---|---|

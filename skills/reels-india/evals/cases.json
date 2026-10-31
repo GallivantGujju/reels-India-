@@ -1,9 +1,518 @@
 [
-  {"id": 1, "prompt": "Write a 25-second English Reel for India: why young professionals in Bengaluru are buying bonds.", "expect": ["all on-screen text and VO in English", "Indian references (₹, Bengaluru, salary day or similar)", "no US terms (401k, $)", "forward score shown, 7/10 or above", "no invented stats"]},
-  {"id": 2, "prompt": "Here's a US creator's script about saving money ('skip your $6 latte, max your Roth IRA'). Make it work for Indian viewers.", "expect": ["keeps structure", "swaps to ₹, SIP/PF/FD", "plain English, no US slang", "still English, no Hindi"]},
-  {"id": 3, "prompt": "Will people forward this Reel? [script about 3 things to check before signing a Bengaluru rental agreement]", "expect": ["scores 5 checks out of 10", "names the weakest check", "rewrites the CTA to a named recipient"]},
-  {"id": 4, "prompt": "Should this exam-prep explainer go on Reels, Shorts or Facebook?", "expect": ["leans Shorts plus long-form with a reason", "marks heuristics [verify]", "names a metric to compare"]},
-  {"id": 5, "prompt": "My Diwali gifting Reel got 40k views and 3 follows. Why?", "expect": ["topic legibility diagnosis", "asks for share rate and skip rate", "checks relatability and the forward trigger", "suggests a re-cut first frame"]},
-  {"id": 6, "prompt": "Make this TikTok script work for India.", "expect": ["notes TikTok is unavailable in India", "converts it to Reels and/or Shorts via the router", "English output"]},
-  {"id": 7, "prompt": "Check my Reel for low-end phones: tiny white text on a busy street background, 40 MB file.", "expect": ["flags text size and contrast", "flags background", "flags file size", "references the production checklist"]}
+  {
+    "id": 1,
+    "polarity": "pass",
+    "tags": [
+      "script",
+      "finance"
+    ],
+    "prompt": "Write a 25-second English Reel for India: why young professionals in Bengaluru are buying bonds.",
+    "expect": [
+      "all on-screen text and VO in English",
+      "Indian references (₹, Bengaluru, salary day or similar)",
+      "no US terms (401k, $)",
+      "forward score shown as a house rule",
+      "no invented stats",
+      "regulation-check line"
+    ],
+    "on_screen": [
+      "Bonds on a Bengaluru salary",
+      "Send this to your colleague"
+    ],
+    "sample_output": "Platform: Reels. Moment: salary day. Forward score: 8/10 (house rule).\nOn screen the hook names Bengaluru and a salary. Voiceover stays in English and uses ₹ only as {{amount}} until you supply the figure.\nForward CTA: Send this to the colleague who asked where the bonus went.\nCheck this finance or investment claim against current regulations before publishing."
+  },
+  {
+    "id": 2,
+    "polarity": "pass",
+    "tags": [
+      "script"
+    ],
+    "prompt": "Here's a US creator's script about saving money ('skip your $6 latte, max your Roth IRA'). Make it work for Indian viewers.",
+    "expect": [
+      "keeps structure",
+      "swaps to ₹, SIP or PF or FD",
+      "plain English, no US slang",
+      "still English"
+    ],
+    "on_screen": [
+      "Skip the extra coffee",
+      "Look at the SIP debit"
+    ],
+    "sample_output": "Keep the two-beat shape. Replace the coffee line with a spend the viewer named, in ₹. Replace the US account with a SIP, PF, or FD.\nCheck this finance or investment claim against current regulations before publishing.\nNo slang, and the line stays in English."
+  },
+  {
+    "id": 3,
+    "polarity": "pass",
+    "tags": [
+      "forward"
+    ],
+    "prompt": "Will people forward this Reel? [script about 3 things to check before signing a Bengaluru rental agreement]",
+    "expect": [
+      "scores the five checks",
+      "names the weakest check",
+      "rewrites the CTA to a named recipient"
+    ],
+    "on_screen": [
+      "3 checks before you sign"
+    ],
+    "sample_output": "Forward score: 6/10. Weakest check: named recipient. Rewrite: Send this to the flatmate who signs before reading the lock-in."
+  },
+  {
+    "id": 4,
+    "polarity": "pass",
+    "tags": [
+      "router"
+    ],
+    "prompt": "Should this exam-prep explainer go on Reels, Shorts or Facebook?",
+    "expect": [
+      "leans Shorts plus long-form with a reason",
+      "marks heuristics [verify]",
+      "names a metric to compare"
+    ],
+    "on_screen": [
+      "Exam prep, start here"
+    ],
+    "sample_output": "Lean YouTube Shorts plus a long video, because the brief is exam prep and search. This router is a heuristic [verify] against your own analytics. Compare subscribers gained and shares per reach after 2 to 4 weeks."
+  },
+  {
+    "id": 5,
+    "polarity": "pass",
+    "tags": [
+      "diagnose"
+    ],
+    "prompt": "My Diwali gifting Reel got 40k views and 3 follows. Why?",
+    "expect": [
+      "topic legibility diagnosis",
+      "asks for share rate and skip rate",
+      "checks relatability and the forward trigger",
+      "suggests a re-cut first frame"
+    ],
+    "on_screen": [
+      "Who the gift is for"
+    ],
+    "sample_output": "The numbers you gave are 40k views and 3 follows. That pattern usually means the topic was not legible. I still need the share rate and the skip rate before calling it the only cause. Check that the first frame says who the gift is for, in plain English, and that the CTA names one person. Recut that first frame."
+  },
+  {
+    "id": 6,
+    "polarity": "pass",
+    "tags": [
+      "router"
+    ],
+    "prompt": "Make this TikTok script work for India.",
+    "expect": [
+      "notes TikTok is unavailable in India",
+      "cites the 2025 minister comment",
+      "converts it to Reels or Shorts",
+      "English output"
+    ],
+    "on_screen": [
+      "Make this for Reels"
+    ],
+    "sample_output": "TikTok is not available in India. India Today reported on 8 September 2025 that IT Minister Ashwini Vaishnaw said there is no plan under consideration to revoke the ban. Route the script to Reels or Shorts. Keep it in English."
+  },
+  {
+    "id": 7,
+    "polarity": "pass",
+    "tags": [
+      "production"
+    ],
+    "prompt": "Check my Reel for low-end phones: tiny white text on a busy street background, 40 MB file.",
+    "expect": [
+      "flags text size and contrast",
+      "flags background",
+      "flags file size",
+      "references the production checklist"
+    ],
+    "on_screen": [
+      "Make the type larger"
+    ],
+    "sample_output": "production-checklist.md: the type is too small, white on a busy street fails contrast, and 40 MB is heavy on mobile data. Use a high-contrast box and keep text inside the ad-spec safe zone."
+  },
+  {
+    "id": 8,
+    "polarity": "pass",
+    "tags": [
+      "hinglish_request",
+      "script"
+    ],
+    "prompt": "Yaar write this Bengaluru rent Reel in Hinglish, bhai.",
+    "expect": [
+      "refuses Hinglish",
+      "writes the Reel in English",
+      "keeps the Bengaluru rent topic"
+    ],
+    "on_screen": [
+      "Bengaluru rent, in English"
+    ],
+    "sample_output": "This skill stays in English, including when you ask for Hinglish or a regional language. Bengaluru rent, in English: name the room, the month, and who you would forward it to."
+  },
+  {
+    "id": 9,
+    "polarity": "pass",
+    "tags": [
+      "finance",
+      "script"
+    ],
+    "prompt": "Write a Reel that tells people to put their bonus in a SIP.",
+    "expect": [
+      "English",
+      "no promised return",
+      "regulation-check line",
+      "no invented percentage"
+    ],
+    "on_screen": [
+      "Where the bonus goes"
+    ],
+    "sample_output": "A SIP is a scheduled rupee investment. I will not state a return. Check this finance or investment claim against current regulations before publishing. Forward CTA: Send this to the friend who asked where the bonus went."
+  },
+  {
+    "id": 10,
+    "polarity": "pass",
+    "tags": [
+      "script"
+    ],
+    "prompt": "Give me on-screen lines for a salary-day Reel. Keep them short.",
+    "expect": [
+      "each on-screen line is 7 words or fewer",
+      "English",
+      "salary day"
+    ],
+    "on_screen": [
+      "Salary gone by the 5th",
+      "Rent takes the first cut"
+    ],
+    "sample_output": "On-screen lines stay at or under 7 words. Salary day, English, no extra clause on the card."
+  },
+  {
+    "id": 11,
+    "polarity": "pass",
+    "tags": [
+      "script"
+    ],
+    "prompt": "What percent of Indians invest through a SIP? Put that stat in the hook.",
+    "expect": [
+      "does not invent a percentage",
+      "marks the gap [verify] or refuses the stat",
+      "still offers an English hook without the number"
+    ],
+    "on_screen": [
+      "Check your own SIP debit"
+    ],
+    "sample_output": "I do not have a sourced figure for that, so I will not invent a percentage. Leave it [verify] until you have a source. The hook can still say: check your own SIP debit on salary day."
+  },
+  {
+    "id": 12,
+    "polarity": "pass",
+    "tags": [
+      "trial"
+    ],
+    "prompt": "Test three hooks for this rental Reel as Trial Reels.",
+    "expect": [
+      "three hooks",
+      "same body",
+      "same CTA",
+      "decision sheet",
+      "graduation stays manual in the app"
+    ],
+    "on_screen": [
+      "3 checks before you sign",
+      "The clause that sets lock-in",
+      "Send this to your flatmate"
+    ],
+    "sample_output": "Trial test: three hooks, one body, one CTA. Record views, skip rate, and shares divided by reach after 24 to 72 hours. Keep the winner on the decision sheet in trial-test.md. Graduating the trial stays a manual step in the Instagram app. This skill does not post."
+  },
+  {
+    "id": 13,
+    "polarity": "pass",
+    "tags": [
+      "hook"
+    ],
+    "prompt": "Score this hook: ₹18,000 is what one missed SIP date cost me.",
+    "expect": [
+      "runs hookscore.py",
+      "says the score is a house rule",
+      "does not promise views"
+    ],
+    "on_screen": [
+      "₹18,000 missed SIP"
+    ],
+    "sample_output": "Run scripts/hookscore.py. The score is a house rule, not a view prediction. The line matches the cost-confession shape. Check this finance or investment claim against current regulations before publishing."
+  },
+  {
+    "id": 14,
+    "polarity": "pass",
+    "tags": [
+      "audience"
+    ],
+    "prompt": "Write next week's Reel for my audience.",
+    "expect": [
+      "reads audience.md",
+      "uses the named viewer",
+      "does not invent a second persona"
+    ],
+    "on_screen": [
+      "For the viewer you named"
+    ],
+    "sample_output": "I will use the named viewer in audience.md. I will not invent a second person. If the example viewer is still in that file, replace it with yours before I write."
+  },
+  {
+    "id": 15,
+    "polarity": "pass",
+    "tags": [
+      "story"
+    ],
+    "prompt": "Tell a personal story about the time I lost money.",
+    "expect": [
+      "does not invent the story",
+      "asks for a true moment",
+      "offers to save it in stories.md"
+    ],
+    "on_screen": [
+      "Ask for the real moment"
+    ],
+    "sample_output": "stories.md has no true moment for this. I will not invent one. Tell me when it happened, what you did, and any rupee figure you actually remember. I can save that row in stories.md."
+  },
+  {
+    "id": 16,
+    "polarity": "pass",
+    "tags": [
+      "script"
+    ],
+    "prompt": "Cut a YouTube Short from this Reel about notice period.",
+    "expect": [
+      "searchable English title",
+      "first frame matches the title",
+      "pinned comment",
+      "stands alone"
+    ],
+    "on_screen": [
+      "Notice period versus the offer"
+    ],
+    "sample_output": "Shorts title in English, first frame matching the title, a pinned comment, and the Short standing alone. Link a long video only if you already have one."
+  },
+  {
+    "id": 17,
+    "polarity": "pass",
+    "tags": [
+      "calendar"
+    ],
+    "prompt": "Plan a Diwali Reel and tell me the 2027 date.",
+    "expect": [
+      "uses the Diwali moment",
+      "leaves the 2027 date [verify]",
+      "does not invent a date"
+    ],
+    "on_screen": [
+      "Diwali gifting, in English"
+    ],
+    "sample_output": "Diwali is the moment. The 2027 date in india-moments.md is still [verify]. I will not fill a date you do not have from an official source."
+  },
+  {
+    "id": 18,
+    "polarity": "pass",
+    "tags": [
+      "caption"
+    ],
+    "prompt": "Write the caption. End it with tag a friend and follow for more.",
+    "expect": [
+      "keyword in the first line",
+      "rejects the bait CTA",
+      "one named forward",
+      "3 to 5 hashtags"
+    ],
+    "on_screen": [
+      "Read the lock-in first"
+    ],
+    "sample_output": "First line: Bengaluru rental lock-in, in plain English. I will not use tag-a-friend or follow-for-more. CTA: Send this to the flatmate who signs before reading the lock-in. Hashtags: #bengalururent #rentalagreement #lockin #firstflat"
+  },
+  {
+    "id": 19,
+    "polarity": "pass",
+    "tags": [
+      "caption"
+    ],
+    "prompt": "Write a pinned comment and a TikTok pin for this Short.",
+    "expect": [
+      "English pin",
+      "no TikTok pin",
+      "does not repeat the on-screen hook"
+    ],
+    "on_screen": [
+      "Pin the objection"
+    ],
+    "sample_output": "Instagram or Shorts pin, in English: Yes, this is about a lock-in clause, and I am not naming a builder. No TikTok pin. TikTok is not available in India. The pin does not repeat the on-screen hook."
+  },
+  {
+    "id": 20,
+    "polarity": "pass",
+    "tags": [
+      "diagnose"
+    ],
+    "prompt": "Here is an Instagram export with skip rate 0.61, reach 20000, shares 400. What is the one leak?",
+    "expect": [
+      "names the hook",
+      "tells the user to run readout.py",
+      "does not invent a second cause as the main leak"
+    ],
+    "on_screen": [
+      "Recut the first seconds"
+    ],
+    "sample_output": "Biggest leak: hook. The skip rate you supplied is 0.61, which is over the house-rule bar. Recut the first three seconds before the CTA. Run scripts/readout.py on the file to confirm. The bar is a house rule, not a platform benchmark."
+  },
+  {
+    "id": 21,
+    "polarity": "pass",
+    "tags": [
+      "script"
+    ],
+    "prompt": "Write a salary-day Reel for a first-job viewer in Pune.",
+    "expect": [
+      "English",
+      "Pune or salary day",
+      "named forward",
+      "no invented percentage"
+    ],
+    "on_screen": [
+      "Salary day in Pune"
+    ],
+    "sample_output": "Salary day in Pune, in English. Forward CTA: Send this to the roommate who checks the balance on the 2nd. Use only rupee figures they give you."
+  },
+  {
+    "id": 22,
+    "polarity": "pass",
+    "tags": [
+      "production"
+    ],
+    "prompt": "Where can I put text so the buttons do not cover it?",
+    "expect": [
+      "cites the Reels ad safe zone",
+      "calls it an ad spec",
+      "does not present it as an organic measurement"
+    ],
+    "on_screen": [
+      "Keep text in the safe zone"
+    ],
+    "sample_output": "Use the Reels ad-spec margins in production-checklist.md: top, bottom, and each side. Call them an ad spec, not a measured organic margin."
+  },
+  {
+    "id": 23,
+    "polarity": "pass",
+    "tags": [
+      "calendar"
+    ],
+    "prompt": "Is there an IPL hook this week? Use the official 2027 schedule.",
+    "expect": [
+      "does not invent a fixture date",
+      "marks the schedule [verify]",
+      "offers a cricket hook shape without a fake date"
+    ],
+    "on_screen": [
+      "Match night, no fake date"
+    ],
+    "sample_output": "The 2027 IPL schedule in india-moments.md is [verify]. I will not invent a fixture. The hook shape can still be a match night, once you paste the official date."
+  },
+  {
+    "id": 24,
+    "polarity": "pass",
+    "tags": [
+      "story",
+      "script"
+    ],
+    "prompt": "Use a wedding-relative story even if I have not given you one.",
+    "expect": [
+      "refuses to invent the story",
+      "asks for a true moment"
+    ],
+    "on_screen": [
+      "Need one true moment"
+    ],
+    "sample_output": "I will not invent a wedding story. If stories.md is empty, tell me one true moment and I will use that."
+  },
+  {
+    "id": "F1",
+    "polarity": "flag",
+    "tags": [],
+    "prompt": "Bad draft with US money slang.",
+    "expect": [
+      "flags dollar",
+      "flags 401k",
+      "flags US slang"
+    ],
+    "expect_flags": [
+      "dollar",
+      "401k",
+      "us_slang"
+    ],
+    "sample_output": "Y'all should max your 401k and skip the $6 latte, no cap."
+  },
+  {
+    "id": "F2",
+    "polarity": "flag",
+    "tags": [],
+    "prompt": "On-screen line that is too long.",
+    "expect": [
+      "flags on-screen lines over 7 words"
+    ],
+    "expect_flags": [
+      "onscreen"
+    ],
+    "on_screen": [
+      "This on screen line has eight words now"
+    ],
+    "sample_output": "The spoken line is fine. The card is too long."
+  },
+  {
+    "id": "F3",
+    "polarity": "flag",
+    "tags": [],
+    "prompt": "Draft that slips into Hinglish.",
+    "expect": [
+      "flags Hinglish"
+    ],
+    "expect_flags": [
+      "hinglish"
+    ],
+    "sample_output": "Yaar bhai likho this rent line in Hindi."
+  },
+  {
+    "id": "F4",
+    "polarity": "flag",
+    "tags": [],
+    "prompt": "Draft with an invented statistic.",
+    "expect": [
+      "flags invented stat"
+    ],
+    "expect_flags": [
+      "invented_stat"
+    ],
+    "sample_output": "Studies show 68% of Bengaluru renters regret the lock-in."
+  },
+  {
+    "id": "F5",
+    "polarity": "flag",
+    "tags": [
+      "finance"
+    ],
+    "prompt": "Finance draft with no regulation line.",
+    "expect": [
+      "flags a missing regulation-check line"
+    ],
+    "expect_flags": [
+      "missing_regulation"
+    ],
+    "sample_output": "Put the whole bonus in a SIP and you will be fine."
+  },
+  {
+    "id": "F6",
+    "polarity": "flag",
+    "tags": [],
+    "prompt": "Draft in a regional script.",
+    "expect": [
+      "flags non-English script"
+    ],
+    "expect_flags": [
+      "hinglish"
+    ],
+    "sample_output": "बेंगलुरु किराया is the hook."
+  }
 ]

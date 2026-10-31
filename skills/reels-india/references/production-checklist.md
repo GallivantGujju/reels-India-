@@ -7,7 +7,7 @@ and check them against your own retention data [verify].
 - [ ] First frame carries the hook in 3–7 words, readable in under 2 seconds
 - [ ] Text large enough to read on a small screen (aim for the text block to fill a good share of frame width; test on the cheapest phone you can find)
 - [ ] High contrast (white with a dark outline/box, or black on yellow); no thin fonts
-- [ ] Inside safe margins: clear of the top bar, the right-side buttons and the bottom caption area
+- [ ] Inside the safe zone. Meta's Ads Guide for Facebook Reels ads says to leave roughly 14% of the top, 35% of the bottom, and 6% of each side free of text, logos, and other key elements (https://www.facebook.com/business/ads-guide/update/image/facebook-facebook-reels, which points at the safe-zone note https://www.facebook.com/business/help/980593475366490). That is an **ad spec**, not a measured margin for organic Reels. Use it as the working margin, and say so.
 - [ ] Every key spoken line appears on screen; captions are burned in or auto-captions are checked for errors
 
 ## Visual

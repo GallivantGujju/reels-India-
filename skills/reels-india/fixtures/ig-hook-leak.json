@@ -1,0 +1,13 @@
+{
+  "_note": "Synthetic fixture for readout.py. Not a real account and not a benchmark.",
+  "reach": 20000,
+  "views": 18000,
+  "shares": 400,
+  "likes": 900,
+  "saved": 200,
+  "comments": 40,
+  "reels_skip_rate": 0.61,
+  "ig_reels_avg_watch_time": 15000,
+  "video_length_seconds": 24,
+  "follows": 80
+}

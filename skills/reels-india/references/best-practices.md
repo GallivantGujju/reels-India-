@@ -1,7 +1,6 @@
 # Shared best practices from the most-installed short-form skills
 
-Where the top short-form video skills agree (sources in `sources.md`). Written in my own words; no upstream text copied except the
-unchanged Vyral Reels file shipped in this folder. Thresholds credited to a source are that source's working numbers, not mine, and are [verify].
+Where the top short-form video skills agree (sources in `sources.md`). Written in my own words. The Vyral files in this folder are credited separately and were lightly adapted. Thresholds credited to a source are that source's working numbers, not mine.
 
 ## Hooks
 - The first 2–3 seconds decide the video. No greeting, logo, "in this video" or intro animation. (All sources.)
@@ -25,7 +24,7 @@ unchanged Vyral Reels file shipped in this folder. Thresholds credited to a sour
 
 ## Packaging
 - No other platform's watermark on cross-posts; give every cross-post a new hook. (Vyral TikTok, Reels.)
-- On-screen text: six words or fewer per card, up from frame 1, inside the safe zone, never where the caption sits; burn in captions for the body. (Jake's ig-reel; exact pixel margins in that skill [verify].)
+- On-screen text: up from frame 1, inside the safe zone, never where the caption sits; burn in captions for the body. Jake's ig-reel uses six words or fewer as a working number. This skill's hard cap is 7 words. The margins to use are Meta's Reels **ad spec** (14% top, 35% bottom, 6% each side), cited in `production-checklist.md`, not a pixel claim from another skill.
 - A Short cut from a long video needs a new first line and must stand alone without the video around it. (Jake's yt-shorts.)
 - Shorts: link to a related long video where one exists; the Short → long-form click is the valuable signal. (Vyral Shorts.)
 

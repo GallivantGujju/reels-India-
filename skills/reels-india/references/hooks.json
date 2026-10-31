@@ -1,0 +1,175 @@
+{
+  "version": "1.0.0",
+  "note": "English hook formulas for Indian audiences. The field shape (template, example, on-screen line, failure mode, match) follows Jakeschincariol/instagram-agent-skill hooks.json (MIT, Copyright (c) 2026 Jake Schincariol). The formulas and examples here are original. They are shapes, not facts: replace every rupee figure with a number the user actually gave you, or leave {{amount}} and ask. Do not invent a statistic. On-screen lines are 7 words or fewer. Walk match patterns in classify_order, most specific first.",
+  "rules": [
+    "English only. If the user asks for Hinglish or a regional language, keep the hook in English.",
+    "Write the spoken line and the on-screen line separately. On screen is 7 words or fewer.",
+    "Use ₹, a city, a date, or a named person. A dollar sign, a 401k, or US slang fails the hook.",
+    "Do not invent the rupee figure or the story. If stories.md has no true moment, ask for one.",
+    "A finance hook still needs this line nearby: Check this finance or investment claim against current regulations before publishing."
+  ],
+  "classify_order": [
+    "cost-confession",
+    "checklist",
+    "notice-period",
+    "exam-day",
+    "salary-day",
+    "comparison",
+    "first-job",
+    "city-number",
+    "withheld",
+    "receipt",
+    "pov",
+    "contrarian",
+    "named-forward",
+    "family-safe",
+    "mistake-time",
+    "loop"
+  ],
+  "hooks": [
+    {
+      "id": "cost-confession",
+      "name": "Cost confession",
+      "template": "{₹ amount the user stated} is what {one real mistake} cost me.",
+      "example": "₹18,000 is what one missed SIP date cost me.",
+      "on_screen": "₹18,000 missed SIP",
+      "failure_mode": "A vague cost, or a rupee figure the user never gave you. 'It cost me my peace' is not a number. Leave {{amount}} and ask.",
+      "match": "₹\\s?\\d|\\bcost me\\b|\\bmissed SIP\\b"
+    },
+    {
+      "id": "checklist",
+      "name": "Numbered check",
+      "template": "{N} things to check before you {one specific action}.",
+      "example": "3 things to check before you sign a Bengaluru rental agreement.",
+      "on_screen": "3 checks before you sign",
+      "failure_mode": "A list with no number, or two topics in one hook.",
+      "match": "^\\s*\\d+\\s+things to check\\b|\\bbefore you sign\\b"
+    },
+    {
+      "id": "notice-period",
+      "name": "Notice period",
+      "template": "{N} days of notice period, and {one concrete consequence}.",
+      "example": "60 days of notice period, and the new offer expires in 10.",
+      "on_screen": "Notice period versus the offer",
+      "failure_mode": "A hustle line with no number of days.",
+      "match": "\\bnotice period\\b"
+    },
+    {
+      "id": "exam-day",
+      "name": "Results day",
+      "template": "{Exam} results day: {one household moment}.",
+      "example": "Board results day: everyone refreshes the page except the person whose roll number it is.",
+      "on_screen": "Board results day at home",
+      "failure_mode": "A rank claim, a cutoff, or a result you invented.",
+      "match": "\\b(board results|JEE|NEET|CAT results)\\b"
+    },
+    {
+      "id": "salary-day",
+      "name": "Salary day",
+      "template": "Salary lands on the {day}. By the {day}, {one bill} has it.",
+      "example": "Salary lands on the 1st. By the 5th, rent has it.",
+      "on_screen": "Salary gone by the 5th",
+      "failure_mode": "'Money goes fast' with no date and no bill.",
+      "match": "\\bsalary\\b"
+    },
+    {
+      "id": "comparison",
+      "name": "Two amounts",
+      "template": "{Familiar spend} is {amount}. {The habit} is {amount} a month.",
+      "example": "Cutting chai versus the cold coffee, once you put your own prices in.",
+      "on_screen": "Chai versus the cold coffee",
+      "failure_mode": "A US price, or a monthly total the user did not state.",
+      "match": "\\b(cutting chai|cold coffee)\\b"
+    },
+    {
+      "id": "first-job",
+      "name": "First job",
+      "template": "First job in {city}: {one money or work surprise}.",
+      "example": "First job in Bengaluru: rent leaves before the PF does.",
+      "on_screen": "First Bengaluru salary, then rent",
+      "failure_mode": "A generic graduate pep talk with no city and no bill.",
+      "match": "\\bfirst job\\b"
+    },
+    {
+      "id": "city-number",
+      "name": "City versus number",
+      "template": "{City} {concrete thing}: {number the user stated} versus {number the user stated}.",
+      "example": "Bengaluru rent versus the first salary, with your figures only.",
+      "on_screen": "Rent versus first salary",
+      "failure_mode": "A city used as a joke about the people who live there, or numbers you made up.",
+      "match": "\\b(Bengaluru|Bangalore|Mumbai|Delhi|Pune|Hyderabad|Chennai|Kolkata|Gurugram|Gurgaon|Noida)\\b"
+    },
+    {
+      "id": "withheld",
+      "name": "The one clause",
+      "template": "The one {noun} in {document} that {specific risk}.",
+      "example": "The one clause in a rental agreement that sets the lock-in.",
+      "on_screen": "The clause that sets lock-in",
+      "failure_mode": "A withhold the body never pays off.",
+      "match": "^\\s*The one\\b"
+    },
+    {
+      "id": "receipt",
+      "name": "Advice with a missing line",
+      "template": "{Person} says {common advice}. Here is the line they skip.",
+      "example": "Your uncle says put it all in an FD. Here is the line he skips.",
+      "on_screen": "The line the FD advice skips",
+      "failure_mode": "An invented return, tax rule, or quote. A finance line still needs the regulation-check sentence.",
+      "match": "\\buncle says\\b|\\bFD\\b"
+    },
+    {
+      "id": "pov",
+      "name": "POV callout",
+      "template": "POV: your {person} who {specific behaviour}.",
+      "example": "POV: your manager who says quick call at 9 pm.",
+      "on_screen": "Quick call at 9 pm",
+      "failure_mode": "A POV aimed at nobody the viewer recognises.",
+      "match": "^\\s*POV:"
+    },
+    {
+      "id": "contrarian",
+      "name": "Stop this",
+      "template": "Stop {common habit}. Do {specific alternative}.",
+      "example": "Stop putting the whole bonus in a savings account.",
+      "on_screen": "Stop parking the whole bonus",
+      "failure_mode": "Telling people to stop a habit they do not recognise in themselves.",
+      "match": "^\\s*Stop\\b"
+    },
+    {
+      "id": "named-forward",
+      "name": "Named forward",
+      "template": "Send this to the {person} who {specific habit}.",
+      "example": "Send this to the flatmate who signs the rental before reading the lock-in.",
+      "on_screen": "Send this to your flatmate",
+      "failure_mode": "'Share with friends' with nobody named.",
+      "match": "^\\s*Send this to\\b"
+    },
+    {
+      "id": "family-safe",
+      "name": "Family-group test",
+      "template": "Forward this to the family group only if you can say {plain point} out loud.",
+      "example": "Forward this to the family group only if you can explain an EMI in one sentence.",
+      "on_screen": "Could you forward this home",
+      "failure_mode": "A joke that would embarrass the sender in the family group.",
+      "match": "\\bfamily group\\b"
+    },
+    {
+      "id": "mistake-time",
+      "name": "How long it took",
+      "template": "I did {specific thing} for {time} before I noticed {concrete result}.",
+      "example": "I paid the same OTT apps for 11 months before I added up the UPI debits.",
+      "on_screen": "11 months of OTT debits",
+      "failure_mode": "A confession that did not happen. Ask for a true one and save it in stories.md.",
+      "match": "\\bfor \\d+ months\\b|\\bOTT\\b"
+    },
+    {
+      "id": "loop",
+      "name": "Last line echoes the first",
+      "template": "End on the same concrete noun the hook opened with.",
+      "example": "The 5th of the month is where the 1st went.",
+      "on_screen": "Where the 1st went",
+      "failure_mode": "A loop that does not repeat a concrete noun from the first line.",
+      "match": "\\bwhere the\\b"
+    }
+  ]
+}
