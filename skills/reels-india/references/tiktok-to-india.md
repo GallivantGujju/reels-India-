@@ -1,7 +1,6 @@
 # TikTok / US default → India adaptation (English content)
 
-Most viral short-form skills assume TikTok and a US viewer. TikTok has been banned in India since 2020 [verify current status],
-so Indian short-form runs on Instagram Reels, YouTube Shorts and Facebook Reels, and sharing often moves to WhatsApp.
+Most viral short-form skills assume TikTok and a US viewer. TikTok has been banned in India since June 2020. On 8 September 2025, India Today reported that Union IT Minister Ashwini Vaishnaw said there is no plan under consideration to revoke the ban, and quoted him: "There is absolutely no proposal which has come from any quarters." (https://www.indiatoday.in/technology/news/story/india-will-not-lift-ban-on-tiktok-says-it-minister-ashwini-vaishnaw-2783820-2025-09-08). This skill does not plan TikTok posts. Indian short-form here means Instagram Reels, YouTube Shorts and Facebook Reels, and sharing often moves to WhatsApp.
 
 | TikTok / US default | India adaptation | Why |
 |---|---|---|

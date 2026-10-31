@@ -1,0 +1,12 @@
+# Synthetic fixture for readout.py. Not a real account and not a benchmark.
+metric,value
+reach,50000
+views,40000
+shares,120
+likes,2000
+saved,600
+comments,80
+reels_skip_rate,0.18
+follows,200
+ig_reels_avg_watch_time,14
+video_length_seconds,24

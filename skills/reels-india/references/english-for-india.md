@@ -2,6 +2,8 @@
 
 All output is English. The aim is English an urban Indian viewer reads instantly and recognises as theirs.
 
+If the user asks for Hinglish, Hindi, or any regional language, keep the draft in English and say why: this skill is English-only for Indian audiences. Do not add a Hinglish line "so it lands."
+
 ## Indian English vs American phrasing (swap table)
 
 | Avoid (US-centric) | Prefer for India |

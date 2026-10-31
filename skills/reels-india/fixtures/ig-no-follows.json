@@ -1,0 +1,15 @@
+{
+  "_note": "Synthetic Graph-style fixture for readout.py. Not a real account and not a benchmark.",
+  "data": [
+    {"name": "reach", "values": [{"value": 80000}]},
+    {"name": "views", "values": [{"value": 70000}]},
+    {"name": "shares", "values": [{"value": 1600}]},
+    {"name": "likes", "values": [{"value": 3000}]},
+    {"name": "saved", "values": [{"value": 400}]},
+    {"name": "comments", "values": [{"value": 90}]},
+    {"name": "reels_skip_rate", "values": [{"value": 0.15}]},
+    {"name": "follows", "values": [{"value": 8}]},
+    {"name": "ig_reels_avg_watch_time", "values": [{"value": 12000}]},
+    {"name": "video_length_seconds", "values": [{"value": 22}]}
+  ]
+}

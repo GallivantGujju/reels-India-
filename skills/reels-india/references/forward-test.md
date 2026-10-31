@@ -1,7 +1,9 @@
 # WhatsApp forward test
 
 Question: **would someone forward this to a specific WhatsApp group or person?** Indian sharing often happens off-platform,
-so this is a proxy for sends per reach. Score before you publish. The 7/10 publish bar is my working rule, not a measured threshold.
+so this is a proxy for sends per reach. Score before you publish.
+
+The 7/10 publish bar is a **house rule**. It is not a measured threshold. Do not describe it as one. Log each score against shares divided by reach in `forward-log.md` for the next 10 to 20 Reels, then keep or move the bar from those rows.
 
 ## Score each 0–2 (max 10)
 
